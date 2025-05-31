@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    position: relative;
+    height: 47vh;
+    background-image: url(Imgs/h2_hero1.jpg);
+    background-color: rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    opacity: 1;
+}
+
+#logo {
+    vertical-align: middle;
+    margin-top: 5vh;
+    margin-left: 15%;
+    margin-bottom: 5vh;
+}
+
+header>a {
+    color: white;
+    text-decoration: none;
+}
+
+.tel {
+    font-size: 18px;
+    margin-left: 40%;
+}
+
+.btnFree {
+    margin-left: 2%;
+    background-color: #D6A04C;
+    border: 1px solid #D6A04C;
+    padding: 14px 24px;
+    transition: all 0.7s ease;
+}
+
+.btnFree:hover {
+    background-color: transparent;
+    color: #D6A04C;
+    border: 1px solid #D6A04C;
+    transition: all 0.5s ease;
+}
+
+#listaAside {
+    width: 200px;
+
+}
+
+aside {
+    position: relative;
+    padding: 140px 50px 10px 59px;
+}
+
+#menu {
+    display: inline-block;
+    margin-left: 2%;
+    width: 2%;
+    line-height: 70%;
+}
+
+#menu>span {
+    display: inline-block;
+    width: 100%;
+    border: solid white 1px;
+}
+
+#boxMenu {
+    position: absolute;
+    height: 3%;
+    width: 3%;
+    left: 82.38%;
+    top: 13.8%;
+    cursor: pointer;
+    z-index: 6;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+#menu2>aside {
+    width: 18%;
+    height: 100vh;
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    right: -18%;
+    z-index: 5;
+    transition: 1s;
+
+}
+
+#boxMenu:checked~#menu2>aside {
+    right: 0%;
+}
+
+#boxMenu:checked {
+    top: 12%;
+    left: 83.8%;
+    height: 6%;
+    width: 2%;
+    transition: all 1s ease;
+}
+
+#listaAside li {
+    margin: 11px 0;
+}
+
+#menu2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 0%;
+    line-height: 210%;
+    left: 40%
+}
+
+#closeMenu {
+    fill: white;
+    height: 2.4%;
+    position: absolute;
+    top: 6%;
+    left: 12%;
+}
+
+#menu2>ul {
+    list-style: none;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    text-align: center;
+}
+
+#menu2 li {
+    list-style: none;
+}
+
+#menuHome {
+    margin-left: 2%;
+}
+
+#menuAbout {
+    margin-left: 2%;
+}
+
+#menuServices {
+    margin-left: -1%;
+}
+
+.blogDiv {
+    position: relative;
+    display: inline-block;
+    margin-left: 45%;
+    line-height: 0;
+    width: 9%;
+}
+
+.menuBlog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+#blogMore {
+    opacity: 1;
+}
+
+#blogMinus {
+    opacity: 0;
+}
+
+#dropdownBlog {
+    margin-top: 9%;
+    height: 0;
+    width: 75%;
+    opacity: 0;
+    color: white;
+    z-index: -10;
+    transition: 0.5s;
+    line-height: 180%;
+    text-align: center;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+
+#checkBoxBlog {
+    position: absolute;
+    width: 16%;
+    height: 5%;
+    top: 37%;
+    left: 43.1%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#checkBoxBlog:checked+#menuBlog {
+    opacity: 0;
+
+}
+
+#blogBlog {
+    margin-left: -82%;
+}
+
+#checkBoxBlog:checked~#dropdownBlog {
+    opacity: 1;
+    z-index: 10;
+    height: fit-content;
+    padding-bottom: 2%;
+}
+
+#checkBoxBlog:checked~.blogDiv #blogMore {
+    opacity: 0;
+}
+
+#checkBoxBlog:checked~.blogDiv #blogMinus {
+    opacity: 1;
+}
+
+#blogCheck {
+    position: absolute;
+    top: 66%;
+    left: 43.6%;
+    width: 18%;
+    height: 7vh;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menuContact {
+    margin-left: -1%;
+}
+
+
+#socials {
+    position: absolute;
+    top: 77%;
+    left: 6%;
+    transition: top 0.5s ease;
+}
+
+#socials text {
+    text-align: center;
+}
+
+#socials a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+#socials svg {
+    height: 21px;
+    width: 21px;
+    fill: white;
+    transition: all 0.5s ease;
+
+}
+
+#socials svg:hover {
+    transform: scaleX(-1);
+    fill: orange;
+}
+
+#home a {
+    color: #e9e3d9;
+    font-size: 16px;
+    position: absolute;
+    top: 44%;
+    left: 20.5%;
+    text-decoration: none;
+}
+
+#slash {
+    color: #e9e3d9;
+    font-size: 16px;
+    position: absolute;
+    top: 44%;
+    left: 23.25%;
+}
+
+#blogA a {
+    color: #e9e3d9;
+    font-size: 16px;
+    position: absolute;
+    top: 44%;
+    left: 24%;
+    text-decoration: none;
+}
+
+#blog {
+    font-family: "Cabin", sans-serif;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    color: white;
+}
+
+#maps {
+    position: absolute;
+    margin-top: 16.3%;
+    background-color: #0B0016;
+    height: 134.5vh;
+    width: 100%;
+}
+
+#mapsMap {
+    position: absolute;
+    top: 9.5%;
+    left: 15%;
+    height: 51vh;
+    width: 69.5%;
+}
+
+#git {
+    position: absolute;
+    top: 51%;
+    left: 15.2%;
+    font-family: "Cabin", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+}
+
+#message2 {
+    position: absolute;
+    top: 55%;
+    left: 15.2%;
+    width: 46%;
+}
+
+#message2 textarea {
+    height: 20.2vh;
+    width: 100%;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 5px;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+#name {
+    position: absolute;
+    top: 72.4%;
+    left: 15.2%;
+    width: 22.3%;
+}
+
+#name input {
+    height: 4.9vh;
+    width: 100%;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+#enterEmail {
+    position: absolute;
+    top: 72.4%;
+    left: 39%;
+    width: 22.3%;
+}
+
+#enterEmail input {
+    height: 4.9vh;
+    width: 100%;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+#enterSubject {
+    position: absolute;
+    top: 78.4%;
+    left: 15.2%;
+    width: 46.2%;
+}
+
+#enterSubject input {
+    height: 4.9vh;
+    width: 100%;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+#signIn button {
+    position: absolute;
+    top: 85.5%;
+    left: 15.2%;
+    width: 7.7%;
+    height: 6vh;
+    background-color: #D6A04C;
+    border: 1px solid #E4AA52;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#signIn button:hover{
+    background-color: transparent;
+    color: #D6A04C;
+}
+
+
+#buttonwood{
+    position: absolute;
+    top: 0%;
+    left: 121%;
+    color: white;
+    width: 20%;
+    font-family: "Cabin", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#tablet svg{
+    position: absolute;
+    top: 41%;
+    left: 115.5%;
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+
+#numbers{
+    position: absolute;
+    top: 41%;
+    left: 121%;
+    color: white;
+    width: 20%;
+    font-family: "Cabin", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#home svg{
+    position: absolute;
+    top: 0%;
+    left: 115.5%;
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+
+#support{
+    position: absolute;
+    top: 82%;
+    left: 121%;
+    color: white;
+    width: 40%;
+    font-family: "Cabin", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#email5 svg{
+    position: absolute;
+    top: 82%;
+    left: 115.5%;
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+
+#end {
+    height: 53vh;
+    width: 100%;
+    background-color: #1E1E1E;
+    position: absolute;
+    top: 384%;
+    z-index: 0;
+}
+
+#logoEnd {
+    position: absolute;
+    top: 23%;
+    left: 15%;
+}
+
+#quickLinks {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 27%;
+}
+
+#qlUL {
+    list-style: none;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    color: #E9E3D9;
+    margin-top: 27%;
+    line-height: 2.5;
+    transition: all 0.5s ease;
+
+}
+
+#qlUL a {
+    color: #E9E3D9;
+    text-decoration: none;
+}
+
+#qlUL li:hover a {
+    text-decoration: underline;
+}
+
+
+#services {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 39%;
+}
+
+#svUL {
+    list-style: none;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    color: #E9E3D9;
+    margin-top: 27%;
+    line-height: 2.5;
+    transition: all 0.5s ease;
+}
+
+#svUL a {
+    color: #E9E3D9;
+    text-decoration: none;
+}
+
+#svUL li:hover a {
+    text-decoration: underline;
+}
+
+#newsletter2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 62.5%;
+    width: 30%;
+}
+
+#subscribe {
+    color: #A4A6AE;
+    font-size: 16px;
+    position: absolute;
+    top: 280%;
+}
+
+#email input {
+    position: absolute;
+    top: 430%;
+    height: 6.5vh;
+    width: 60%;
+    border-bottom-left-radius: 0.5vh;
+    border-top-left-radius: 0.5vh;
+    border: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    padding-left: 4%;
+}
+
+#emailBtn {
+    background-color: #D6A04C;
+    position: absolute;
+    top: 430%;
+    left: 60%;
+    height: 6.5vh;
+    width: 15%;
+    border-bottom-right-radius: 0.5vh;
+    border-top-right-radius: 0.5vh;
+    border: none;
+    cursor: pointer;
+}
+
+#socialsEnd {
+    position: absolute;
+    top: 900%;
+    left: -1.5%
+}
+
+#socialsEnd text {
+    text-align: center;
+}
+
+#socialsEnd a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+#socialsEnd svg {
+    height: 21px;
+    width: 21px;
+    fill: white;
+    transition: all 0.5s ease;
+
+}
+
+#socialsEnd svg:hover {
+    transform: scaleX(-1);
+    fill: orange;
+}
+
+#end2 {
+    color: #A4A6AE;
+    position: relative;
+    top: 82.5%;
+    left: 15.3%;
+    width: 69%;
+    border: solid 1px #353535;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 0%;
+    text-align: center;
+    padding-top: 2.4%;
+}
+
+#end2 svg {
+    position: relative;
+    height: 16px;
+    fill: #D6A04C;
+}
+
+#Colorlib {
+    text-decoration: none;
+    color: #D6A04C;
+}
+
+#underMessage{
+    color: #212529;
+    font-size: 14px;
+}
+

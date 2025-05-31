@@ -1,0 +1,1259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.branco {
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    position: relative;
+    height: 94vh;
+    background-image: url(Imgs/h1_hero1.jpg);
+    background-color: rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    opacity: 1;
+}
+
+#logo {
+    vertical-align: middle;
+    margin-top: 5vh;
+    margin-left: 15%;
+    margin-bottom: 5vh;
+}
+
+header>a {
+    color: white;
+    text-decoration: none;
+}
+
+.tel {
+    font-size: 18px;
+    margin-left: 40%;
+}
+
+.btnFree {
+    margin-left: 2%;
+    background-color: #D6A04C;
+    border: 1px solid #D6A04C;
+    padding: 14px 24px;
+    transition: all 0.7s ease;
+}
+
+.btnFree:hover {
+    background-color: transparent;
+    color: #D6A04C;
+    border: 1px solid #D6A04C;
+    transition: all 0.5s ease;
+}
+
+#listaAside {
+    width: 200px;
+
+}
+
+aside {
+    position: relative;
+    padding: 140px 50px 10px 59px;
+}
+
+#menu {
+    display: inline-block;
+    margin-left: 2%;
+    width: 2%;
+    line-height: 70%;
+}
+
+#menu>span {
+    display: inline-block;
+    width: 100%;
+    border: solid white 1px;
+}
+
+#boxMenu {
+    position: absolute;
+    height: 4.1%;
+    width: 3%;
+    left: 82.38%;
+    top: 5.5%;
+    cursor: pointer;
+    z-index: 6;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+#menu2>aside {
+    width: 18%;
+    height: 100vh;
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    right: -18%;
+    z-index: 5;
+    transition: 1s;
+
+}
+
+#boxMenu:checked~#menu2>aside {
+    right: 0%;
+}
+
+#boxMenu:checked {
+    top: 6%;
+    left: 83.8%;
+    height: 3%;
+    width: 2%;
+    transition: all 1s ease;
+}
+
+#listaAside li {
+    margin: 11px 0;
+}
+
+#menu2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 0%;
+    line-height: 210%;
+    left: 40%
+}
+
+#closeMenu {
+    fill: white;
+    height: 2.4%;
+    position: absolute;
+    top: 6%;
+    left: 12%;
+}
+
+#menu2>ul {
+    list-style: none;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    text-align: center;
+}
+
+#menu2 li {
+    list-style: none;
+}
+
+#menuHome {
+    margin-left: 2%;
+}
+
+#menuAbout {
+    margin-left: 2%;
+}
+
+#menuServices {
+    margin-left: -1%;
+}
+
+.blogDiv {
+    position: relative;
+    display: inline-block;
+    margin-left: 45%;
+    line-height: 0;
+    width: 9%;
+}
+
+.menuBlog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+#blogMore {
+    opacity: 1;
+}
+
+#blogMinus {
+    opacity: 0;
+}
+
+#dropdownBlog {
+    margin-top: 9%;
+    height: 0;
+    width: 75%;
+    opacity: 0;
+    color: white;
+    z-index: -10;
+    transition: 0.5s;
+    line-height: 180%;
+    text-align: center;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+
+#checkBoxBlog {
+    position: absolute;
+    width: 16%;
+    height: 5%;
+    top: 37%;
+    left: 43.1%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#checkBoxBlog:checked + #menuBlog {
+    opacity: 0;
+    
+}
+
+#blogBlog{
+    margin-left: -82%;
+}
+
+#checkBoxBlog:checked~#dropdownBlog {
+    opacity: 1;
+    z-index: 10;
+    height: fit-content;
+    padding-bottom: 2%;
+}
+
+#checkBoxBlog:checked ~ .blogDiv #blogMore {
+    opacity: 0;
+}
+
+#checkBoxBlog:checked ~ .blogDiv #blogMinus {
+    opacity: 1;
+}
+
+#blogCheck {
+    position: absolute;
+    top: 66%;
+    left: 43.6%;
+    width: 18%;
+    height: 7vh;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menuContact{
+    margin-left: -1%;
+}
+
+
+#socials {
+    position: absolute;
+    top: 77%;
+    left: 6%;
+    transition: top 0.5s ease;
+}
+
+#socials text {
+    text-align: center;
+}
+
+#socials a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+#socials svg {
+    height: 21px;
+    width: 21px;
+    fill: white;
+    transition: all 0.5s ease;
+
+}
+
+#socials svg:hover {
+    transform: scaleX(-1);
+    fill: orange;
+}
+#salt {
+    margin-top: 10%;
+    margin-left: 20%;
+    color: #E9E3D9;
+    font-size: 16px;
+
+}
+
+#homeOwner {
+    color: #FFFFFF;
+    font-size: 60px;
+    padding-top: 1.5%;
+    font-family: "Cabin", sans-serif;
+
+}
+
+#never {
+    color: white;
+    font-size: 55px;
+    padding-top: 1%;
+    font-family: "Cabin", sans-serif;
+}
+
+#affordable {
+    color: white;
+    font-size: 55px;
+    padding-top: 1%;
+    font-family: "Cabin", sans-serif;
+}
+
+#playReel {
+    color: white;
+    font-size: 20px;
+    margin-left: 28.5%;
+    position: absolute;
+}
+
+#transparentBorder {
+    position: absolute;
+    width: 158%;
+    height: 158%;
+    left: -30%;
+    top: -29%;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    opacity: 0.07;
+}
+
+#yellowBorder {
+    position: relative;
+    width: 110%;
+    height: 110%;
+    top: -4.6%;
+    left: -5.4%;
+    border-radius: 50%;
+    border: solid 1px #D6A04C;
+}
+
+#playButton {
+    position: absolute;
+    left: 76.2%;
+    top: 46%;
+    width: 3.75%;
+    height: 7.5vh;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 10;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#playButton:hover {
+    background-color: #D6A04C;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+#playButton:hover svg {
+    fill: #ffffff;
+    transition: all 0.3s ease;
+}
+
+#playButton svg {
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    fill: #D6A04C;
+    transition: all 0.3s ease;
+}
+
+.mouse {
+    margin-top: 13%;
+    margin-left: 2.5%;
+    height: 2.6%;
+    width: 2.6%;
+    fill: #D6A04C;
+}
+
+#yellowBox {
+
+    background-color: #D6A04C;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 11vh;
+}
+
+#Homeownership2 {
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 4.3%;
+    line-height: 125%;
+}
+
+#worldClass {
+    font-size: 20px;
+    margin-top: -5.5%;
+
+    line-height: 125%;
+    position: absolute;
+    left: 45%;
+}
+
+
+#aboutUs {
+    position: relative;
+    background-color: #0B0016;
+    height: 174vh;
+    z-index: 0;
+}
+
+#mouseHere {
+    position: relative;
+    top: 6%;
+}
+
+#aboutUsText {
+    margin-left: 9.5%;
+    padding: 5.5%;
+    color: white;
+    font-size: 50px;
+    font-family: "Cabin", sans-serif;
+}
+
+#belaraIs {
+    color: #E9E3D9;
+    font-family: "Questrial", sans-serif;
+    font-size: 27px;
+    margin-left: 21%;
+    line-height: 150%;
+    margin-top: -3%;
+}
+
+#theStudio {
+    font-size: 18px;
+    color: #E9E3D9;
+    position: absolute;
+    left: 51%;
+    top: 12.5%;
+    line-height: 150%;
+}
+
+#about1Img {
+    margin-left: 21%;
+    margin-top: 3%;
+}
+
+#learnMore {
+    position: absolute;
+    top: 25%;
+    right: 41.2%;
+    height: 3.2%;
+    width: 7.7%;
+    background-color: transparent;
+    border: solid #D6A04C 1px;
+    transition: all 0.5s ease;
+    color: white;
+    text-align: center;
+    line-height: 300%;
+}
+
+#learnMore:hover {
+    background-color: #D6A04C;
+
+}
+
+
+#learnMore a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    transition: all 0.5s ease;
+
+}
+
+#about2Img {
+    position: absolute;
+    left: 51.2%;
+    top: 31.5%;
+}
+
+#WWD {
+    color: white;
+    margin-top: 5%;
+    margin-left: 14.5%;
+    font-size: 44px;
+}
+
+#blog1ImgDiv {
+    height: 364px;
+    width: 416px;
+    position: relative;
+    margin-top: 3.8%;
+    margin-left: 15%;
+    top: 0.45%;
+    transition: 0.5s;
+}
+
+#blog1Img {
+    height: 360px;
+    width: 416px;
+    transition: 1s;
+}
+
+#blog1Img:hover {
+    opacity: 70%;
+    transition: 1s;
+}
+
+#blog1ImgDiv:hover {
+    top: 30px;
+}
+
+#arrowCommercial {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 24px;
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+}
+
+#blog1ImgDiv svg {
+    height: 17px;
+}
+
+
+#blog1ImgDiv:hover #arrowCommercial {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+#blog1ImgDiv:hover #Commercial {
+    color: #D6A04C;
+}
+
+#Commercial {
+    font-size: 32px;
+    color: #E9E3D9;
+    position: absolute;
+    top: 104.5%;
+    left: 0;
+    transition: 0.5s;
+}
+
+#Architecture {
+    font-size: 14px;
+    color: #E9E3D9;
+    position: absolute;
+    top: 115%;
+    margin-top: 3%;
+}
+
+#blog2ImgDiv {
+    position: relative;
+    transition: 500ms;
+    top: 0.2%;
+}
+
+
+#blog2Img {
+    height: 360px;
+    width: 416px;
+    position: absolute;
+    bottom: 13.5%;
+    left: 38.5%;
+    transition: 1s;
+}
+
+
+#blog2Img:hover {
+    opacity: 70%;
+    transition: 1s;
+}
+
+#blog2ImgDiv:hover {
+    top: 30px;
+}
+
+#arrowResidential {
+    position: absolute;
+    left: 48.5%;
+    margin-top: -11%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 24px;
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+}
+
+#blog2ImgDiv svg {
+    height: 17px;
+}
+
+
+#blog2ImgDiv:hover #arrowResidential {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+#blog2ImgDiv:hover #Residential {
+    color: #D6A04C;
+}
+
+#Residential {
+    font-size: 32px;
+    color: #E9E3D9;
+    position: absolute;
+    top: 104.5%;
+    left: 38.5%;
+    transition: 0.5s;
+    margin-top: 1.2%;
+}
+
+#Architecture2 {
+    font-size: 14px;
+    color: #E9E3D9;
+    position: absolute;
+    top: 115%;
+    margin-top: 3.8%;
+    left: 38.5%;
+    transition: 0.5s;
+}
+
+#blog3ImgDiv {
+    height: 364px;
+    width: 416px;
+    position: relative;
+    left: 62%;
+    margin-top: -19.1%;
+    transition: 0.5s;
+    top: 0;
+}
+
+#blog3Img {
+    height: 360px;
+    width: 416px;
+    transition: 1s;
+}
+
+
+
+#blog3ImgDiv:hover {
+    top: 30px;
+    opacity: 70%;
+}
+
+#arrowArchitecture {
+    position: absolute;
+    top: 43%;
+    left: 44%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 24px;
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+}
+
+#blog3ImgDiv svg {
+    height: 17px;
+}
+
+#blog3ImgDiv:hover #arrowArchitecture {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#Architecture3 {
+    font-size: 30px;
+    color: #E9E3D9;
+    position: absolute;
+    top: 103.5%;
+    left: 0%;
+    transition: 0.5s;
+}
+
+#blog3ImgDiv:hover #Architecture3 {
+    color: #D6A04C;
+}
+
+#Architecture35 {
+    font-size: 14px;
+    color: #E9E3D9;
+    position: absolute;
+    top: 117%;
+    left: 0%;
+}
+
+#ProjectsPage {
+    width: 100%;
+    height: 98vh;
+    background-color: #1E1E1E;
+    position: absolute;
+    z-index: -1;
+}
+
+#projects {
+    font-size: 215px;
+    color: transparent;
+    -webkit-text-stroke: 1px #E9E3D9;
+    position: absolute;
+    top: 12.9%;
+    left: 15%;
+}
+
+#project1 {
+    position: absolute;
+    bottom: -0.3%;
+    left: 15%;
+}
+
+#leftArrow {
+    height: 35px;
+    fill: #C5A06E;
+    position: absolute;
+    top: 328%;
+    left: 15%;
+}
+
+#rightArrow {
+    height: 35px;
+    fill: #C5A06E;
+    position: absolute;
+    top: 328%;
+    right: 16.1%;
+}
+
+
+
+#whyUs {
+    z-index: 5;
+    height: 93vh;
+    width: 100%;
+    background-color: #0B0016;
+    margin-top: 95vh;
+}
+
+#casaLa {
+    position: relative;
+    bottom: 9%;
+    left: 15%;
+    z-index: 5;
+    background-color: #D6A04C;
+    width: 40%;
+    height: 20vh;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: "Cabin", sans-serif;
+    transition: all 0.7s ease;
+}
+
+#casaLa:hover {
+    transition: all 0.7s ease;
+    background-color: #272727;
+}
+
+#casaLa:hover #arrowYellowSvg {
+    transition: all 0.7s ease;
+    background-color: #D6A04C;
+}
+
+#casaLaText {
+    position: absolute;
+    left: 10%;
+    top: 13%;
+    line-height: 130%;
+}
+
+#casaLa:hover #casaLaText {
+    transition: all 0.7s ease;
+    color: #D6A04C;
+}
+
+#arrowYellow {
+    position: absolute;
+    left: 136%;
+    top: 45%;
+}
+
+#arrowYellowSvg {
+    height: 17px;
+    width: 17px;
+    background-color: #FFFFFF1A;
+    fill: white;
+    border-radius: 50%;
+    padding: 130%;
+    box-sizing: content-box;
+    transition: all 0.7s ease;
+}
+
+#architectureCasa {
+    font-size: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 111%;
+    font-family: "Questrial", sans-serif;
+}
+
+#ball1 {
+    fill: #111111;
+}
+
+#aboutUs3 {
+    position: relative;
+    top: 17%;
+    left: 15%;
+}
+
+#whyUsText {
+    color: white;
+    position: absolute;
+    left: 63%;
+    font-size: 55px;
+    font-family: "Questrial", sans-serif;
+    top: 405%;
+}
+
+#belaraNakameguro {
+    color: #E9E3D9;
+    font-size: 27px;
+    position: absolute;
+    top: 414%;
+    left: 63%;
+    line-height: 140%;
+}
+
+#learnMoreWhyus {
+    position: absolute;
+    top: 442%;
+    right: 29.3%;
+    height: 5.2%;
+    width: 7.7%;
+    background-color: transparent;
+    border: solid #D6A04C 1px;
+    transition: all 0.5s ease;
+    color: #D6A04C;
+    text-align: center;
+    line-height: 300%;
+}
+
+#learnMoreWhyus:hover {
+    background-color: white;
+
+}
+
+
+#learnMoreWhyus a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    transition: all 0.5s ease;
+
+}
+
+#founderPage {
+    background-color: #0A0A0A;
+    height: 62vh;
+}
+
+#image1 {
+    fill: #D6A04C;
+    height: 27px;
+    width: 36px;
+    position: absolute;
+    top: 471%;
+    left: 49%;
+}
+
+#founderPhrase {
+    position: absolute;
+    font-size: 22px;
+    font-family: "Questrial", sans-serif;
+    color: #C1C1C1;
+    position: absolute;
+    top: 476%;
+    left: 32.5%;
+    text-align: center;
+    line-height: 170%;
+    padding: 0px 30px;
+}
+
+#leftArrowFounder {
+    height: 28px;
+    fill: #888888;
+    position: absolute;
+    top: 486%;
+    left: 21.5%;
+}
+
+#rightArrowFounder {
+    height: 28px;
+    fill: #888888;
+    position: absolute;
+    top: 486%;
+    right: 21.5%;
+}
+
+#founder {
+    position: absolute;
+    top: 490%;
+    left: 48%;
+}
+
+#BuckKinnear {
+    color: #FFFFFF;
+    font-size: 12px;
+    position: absolute;
+    top: 500%;
+    left: 45%;
+}
+
+#architectureDesignsPage {
+    height: 81vh;
+    width: 100%;
+    background-color: #0B0016;
+}
+
+#architectureDesigns1 {
+    height: 31vh;
+    width: 70%;
+    border: solid 1px #2C2A2E;
+    position: relative;
+    left: 15%;
+    transition: all 1s ease;
+}
+
+#architectureDesigns1:hover {
+    background-color: #2C2A2E;
+    transition: all 0.7s ease;
+}
+
+
+#adImg1 {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+
+#adAD1 {
+    color: #FFFFFF;
+    position: absolute;
+    top: 22%;
+    left: 23.5%;
+    font-size: 14px;
+}
+
+#Curating1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 23.5%;
+    line-height: 120%;
+    transition: all 0.7s ease;
+}
+
+#architectureDesigns1:hover #Curating1 {
+    color: #D6A04C;
+    transition: all 0.7s ease;
+}
+
+#adDate1 {
+    color: #FFFFFF;
+    font-size: 14px;
+    position: absolute;
+    top: 70%;
+    left: 23.5%;
+}
+
+#adArrow1 {
+    position: absolute;
+    top: 39%;
+    left: 91.5%;
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    padding: 1.7%;
+    transition: all 0.7s ease;
+}
+
+#architectureDesigns1:hover #adArrow1 {
+    background-color: #D6A04C;
+    transition: all 0.7s ease;
+}
+
+#adArrow1 svg {
+    fill: white;
+    width: 16px;
+    height: 16px;
+}
+
+#architectureDesigns2 {
+    margin-top: 1.5%;
+    height: 31vh;
+    width: 70%;
+    border: solid 1px #2C2A2E;
+    position: relative;
+    left: 15%;
+    transition: all 0.7s ease;
+}
+
+#architectureDesigns2:hover {
+    background-color: #2C2A2E;
+    transition: all 0.7s ease;
+}
+
+#adImg2 {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+
+#adAD2 {
+    color: #FFFFFF;
+    position: absolute;
+    top: 22%;
+    left: 23.5%;
+    font-size: 14px;
+}
+
+#Curating2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 23.5%;
+    line-height: 120%;
+    transition: all 0.7s ease;
+}
+
+#architectureDesigns2:hover #Curating2 {
+    color: #D6A04C;
+    transition: all 0.7s ease;
+}
+
+#adDate2 {
+    color: #FFFFFF;
+    font-size: 14px;
+    position: absolute;
+    top: 70%;
+    left: 23.5%;
+}
+
+#adArrow2 {
+    position: absolute;
+    top: 39%;
+    left: 91.5%;
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    padding: 1.7%;
+    transition: all 0.7s ease;
+
+}
+
+#architectureDesigns2:hover #adArrow2 {
+    background-color: #D6A04C;
+    transition: all 0.7s ease;
+}
+
+#adArrow2 svg {
+    fill: white;
+    width: 16px;
+    height: 16px;
+}
+
+#end {
+    height: 53vh;
+    width: 100%;
+    background-color: #1E1E1E;
+    position: absolute;
+    z-index: 0;
+}
+
+#logoEnd {
+    position: absolute;
+    top: 23%;
+    left: 15%;
+}
+
+#quickLinks {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 27%;
+}
+
+#qlUL {
+    list-style: none;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    color: #E9E3D9;
+    margin-top: 27%;
+    line-height: 2.5;
+    transition: all 0.5s ease;
+
+}
+
+#qlUL a {
+    color: #E9E3D9;
+    text-decoration: none;
+}
+
+#qlUL li:hover a {
+    text-decoration: underline;
+}
+
+
+#services {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 39%;
+}
+
+#svUL {
+    list-style: none;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    color: #E9E3D9;
+    margin-top: 27%;
+    line-height: 2.5;
+    transition: all 0.5s ease;
+}
+
+#svUL a {
+    color: #E9E3D9;
+    text-decoration: none;
+}
+
+#svUL li:hover a {
+    text-decoration: underline;
+}
+
+#newsletter {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: absolute;
+    top: 24%;
+    left: 62.5%;
+    width: 30%;
+}
+
+#subscribe {
+    color: #A4A6AE;
+    font-size: 16px;
+    position: absolute;
+    top: 280%;
+}
+
+#email input {
+    position: absolute;
+    top: 430%;
+    height: 6.5vh;
+    width: 60%;
+    border-bottom-left-radius: 0.5vh;
+    border-top-left-radius: 0.5vh;
+    border: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 15px;
+    padding-left: 4%;
+}
+
+#emailBtn {
+    background-color: #D6A04C;
+    position: absolute;
+    top: 430%;
+    left: 60%;
+    height: 6.5vh;
+    width: 15%;
+    border-bottom-right-radius: 0.5vh;
+    border-top-right-radius: 0.5vh;
+    border: none;
+    cursor: pointer;
+}
+
+#socialsEnd {
+    position: absolute;
+    top: 900%;
+    left: -1.5%
+}
+
+#socialsEnd text {
+    text-align: center;
+}
+
+#socialsEnd a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+#socialsEnd svg {
+    height: 21px;
+    width: 21px;
+    fill: white;
+    transition: all 0.5s ease;
+
+}
+
+#socialsEnd svg:hover {
+    transform: scaleX(-1);
+    fill: orange;
+}
+
+#end2 {
+    color: #A4A6AE;
+    position: relative;
+    top: 82.5%;
+    left: 15.3%;
+    width: 69%;
+    border: solid 1px #353535;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 0%;
+    text-align: center;
+    padding-top: 2.4%;
+}
+
+#end2 svg {
+    position: relative;
+    height: 16px;
+    fill: #D6A04C;
+}
+
+#Colorlib {
+    text-decoration: none;
+    color: #D6A04C;
+}

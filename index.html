@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Coming+Soon&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rhodium+Libre&family=Road+Rage&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture | Template</title>
+    <link rel="icon" href="Imgs/logo2.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div id="topo"></div>
+            <a href=""><img id="logo" src="Imgs/logo.png.webp" alt=""></a>
+            <a href="" class="tel"> P: 10(89) 273 3627</a>
+            <a href="" class="btnFree">Get Free Quote</a>
+
+            <input type="checkbox" id="boxMenu">
+            <div id="menu">
+
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <div id="menu2">
+                <aside>
+                    <svg id="closeMenu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path
+                            d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z" />
+                    </svg>
+                    <ul id="listaAside">
+                        <li><a href="" id="menuHome">Home</a></li>
+                        <li><a href="" id="menuAbout">About</a></li>
+                        <li><a href="" id="menuServices">Services</a></li>
+                        <li><a href="" id="menuProjects">Projects</a></li>
+                    
+                        <li>
+                            <input type="checkbox" id="checkBoxBlog">
+                          
+                            <div class="blogDiv">
+                                <span class="menuBlog" id="blogMore">Blog&nbsp;+</span>
+                                <span class="menuBlog" id="blogMinus">Blog&nbsp;-</span> <!--Esses códigos ai realmente peguei da internet, nada tava dando certo(&nbsp)-->
+                            </div>
+                          
+                            <ul id="dropdownBlog">
+                              <li><a href="blog.html" id="blogBlog">Blog</a></li>
+                              <li>Blog Details</li>
+                              <li>Elements</li>
+                            </ul>
+                          </li>
+                          
+                          <li><a href="contact.html" id="menuContact">Contact</a></li>
+                    </ul>
+
+                    <div id="socials">
+                        <a href="https://www.facebook.com/sai4ull"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                            </svg></a>
+
+                        <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                            </svg></a>
+
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg></a>
+                    </div>
+                </aside>
+            </div>
+
+            <div id="salt">
+                SALT LAKE CITY, UNITED STATES
+
+                <div id="homeOwner">Homeownership</div>
+                <div id="never">never looked so
+                    <span id="playReel">Play Reel</span>
+                    <span>
+                        <a id="playButton" href="https://www.youtube.com/watch?v=up68UAfH0d0">
+                            <div id="yellowBorder">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                                    <path
+                                        d="M3 2.692v11.618l11.618-5.837-11.618-5.781zM4 4.308l8.382 4.17-8.382 4.211v-8.381z" />
+                                </svg>
+                                <div id="transparentBorder"></div>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+                <div id="affordable">affordable</div>
+                <div class="mouse">
+                    <a href="#mouseHere" class="mouse"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                            <g>
+                            </g>
+                            <path
+                                d="M8.5 0c-3.033 0-5.5 2.467-5.5 5.5v6c0 3.033 2.467 5.5 5.5 5.5s5.5-2.467 5.5-5.5v-6c0-3.033-2.467-5.5-5.5-5.5zM13 11.5c0 2.481-2.019 4.5-4.5 4.5s-4.5-2.019-4.5-4.5v-6c0-2.481 2.019-4.5 4.5-4.5s4.5 2.019 4.5 4.5v6zM8.5 3.5c-0.827 0-1.5 0.673-1.5 1.5v2c0 0.827 0.673 1.5 1.5 1.5s1.5-0.673 1.5-1.5v-2c0-0.827-0.673-1.5-1.5-1.5zM9 7c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5v-2c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5v2z" />
+                        </svg></a>
+
+
+                </div>
+
+                <div id="yellowBox">
+                    <p id="Homeownership2">Homeownership never looked so <br id="affordable2"> affordable</p>
+                    <span id="worldClass">World-class architecture design <br> studio</span>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <div id="aboutUs">
+        <div id="mouseHere"></div>
+        <div id="aboutUsText">About Us</div>
+
+        <div id="belaraIs">"Belara is a multi-awards winning <br> architectural and design studio <br> operating in the
+            field of interior <br> design and architecture.
+
+        </div>
+        <div id="theStudio"> The studio offers tailor-made solutions for every <br> project that has a unique identity
+            according to its <br>
+            context. Understanding the scope and the projects <br> ambitions, and through listening to clients, users,
+            <br>
+            and contractors help us in creating well-conceived <br> design solutions.
+        </div>
+
+        <div><img id="about1Img" src="Imgs/about1.jpg.webp" alt=""></div>
+
+        <a href="#topo">
+            <div id="learnMore">Learn More</div>
+        </a>
+
+        <div><img id="about2Img" src="Imgs/about2.jpg.webp" alt=""></div>
+        <div id="WWD">What We Do?</div>
+
+        <div id="blog1ImgDiv">
+            <img id="blog1Img" src="Imgs/blog1.jpg.webp" alt="">
+            <a href="#topo">
+                <div id="arrowCommercial">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path
+                            d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                    </svg>
+                </div>
+            </a>
+            <div id="Commercial">Commercial</div>
+            <p id="Architecture">ARCHITECTURE DESIGN</p>
+        </div>
+
+        <div id="blog2ImgDiv">
+            <img id="blog2Img" src="Imgs/blog2.jpg.webp" alt="">
+            <a href="#topo">
+                <div id="arrowResidential">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path
+                            d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                    </svg>
+                </div>
+            </a>
+            <span id="Residential">Residential</span>
+            <p id="Architecture2">ARCHITECTURE DESIGN</p>
+        </div>
+
+        <div id="blog3ImgDiv">
+            <img id="blog3Img" src="Imgs/blog3.jpg.webp" alt="">
+            <a href="#topo">
+                <div id="arrowArchitecture">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path
+                            d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                    </svg>
+                </div>
+            </a>
+            <div id="Architecture3">Architecture</div>
+            <p id="Architecture35">ARCHITECTURE DESIGN</p>
+        </div>
+    </div>
+
+    <div id="ProjectsPage">
+        <div id="projects">
+            Projects
+        </div>
+        <div id="project1">
+            <img src="Imgs/projects1.jpg.webp" id="img1" alt="">
+        </div>
+    </div>
+
+    <a href=""><svg id="leftArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" viewBox="0 0 17 17">
+            <g>
+            </g>
+            <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z" />
+        </svg></a>
+
+    <svg id="rightArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+        viewBox="0 0 17 17">
+        <g>
+        </g>
+        <path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z" />
+    </svg>
+
+    <div id="whyUs">
+
+        <div id="casaLa">
+
+            <div id="casaLaText">Casa la perla nera residential<br>
+                interior design</span>
+                <div id="architectureCasa">
+                    Architecture design
+                </div>
+
+                <a href="">
+                    <div id="arrowYellow">
+                        <svg id="arrowYellowSvg" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 17 17">
+                            <g>
+                            </g>
+                            <path
+                                d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <!--<input id="ball1" type="radio">-->
+
+
+        </div>
+        <div id="aboutUs3">
+            <img src="Imgs/about3.jpg.webp" alt="">
+        </div>
+        <div id="whyUsText">Why us?</div>
+        <div id="belaraNakameguro">Belara Nakameguro is located in a <br> quiet location, a 6-minute walk <br> from JR
+            Nakameguro Station and <br> a side
+            street from Komazawa Dori. <br> It has 5 floors above ground, with <br> office space.</div>
+
+        <div>
+            <div id="learnMoreWhyus">Learn More</div>
+        </div>
+    </div>
+
+
+
+    <div id="founderPage">
+        <div id="allFounder">
+            <div id="image1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 27">
+                    <path id="testi" d="M13.5,0,0,13.5V27H13.5ZM36,0,22.5,13.5V27H36Z" />
+                </svg>
+            </div>
+            <div id="founderPhrase">"Belara is an office building brand that contributes to people's <br> rich work life
+                by providing creative
+                office space under the <br> slogan "A BASE FOR GOOD LIFE."</div>
+
+            <svg id="leftArrowFounder" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1" viewBox="0 0 17 17">
+                <g>
+                </g>
+                <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z" />
+            </svg>
+
+            <svg id="rightArrowFounder" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1" viewBox="0 0 17 17">
+                <g>
+                </g>
+                <path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z" />
+            </svg>
+
+            <div id="founder"><img src="Imgs/founder-img.png.webp" alt=""></div>
+            <div id="BuckKinnear">Buck Kinnear @Creative Designer</div>
+        </div>
+    </div>
+
+    <div id="architectureDesignsPage">
+        <div id="architectureDesigns1">
+            <img id="adImg1" src="Imgs/single-rooms1.jpg.webp" alt="">
+            <div id="adAD1">ARCHITECTURE DESIGN</div>
+            <div id="Curating1">Curating a workplace that inspires <br>
+                all of us</div>
+            <div id="adDate1">12 Feb 2021</div>
+            <a href="">
+                <div id="adArrow1">
+                    <svg id="adArrowSvg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path
+                            d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <div id="architectureDesigns2">
+
+            <img id="adImg2" src="Imgs/single-rooms1.jpg.webp" alt="">
+            <div id="adAD2">ARCHITECTURE DESIGN</div>
+            <div id="Curating2">Curating a workplace that inspires <br>
+                all of us</div>
+            <div id="adDate2">12 Feb 2021</div>
+
+            <a href="">
+                <div id="adArrow2">
+                    <svg id="adArrowSvg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path
+                            d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="end">
+        <a href=""><div id="logoEnd"><img src="Imgs/logo.png.webp" alt=""></div></a>
+        <div id="quickLinks">
+            <h4>Quick Links</h4>
+            <ul id="qlUL">
+                <li><a href="">Work</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Tips & Tricks</a></li>
+            </ul>
+        </div>
+
+        <div id="services">
+            <h4>Services</h4>
+            <span>
+                <ul id="svUL">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Submit Ticket</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </span>
+        </div>
+
+        <div id="newsletter">
+            <h4>Newsletter</h4>
+
+            <span id="subscribe">Subscribe newsletter to get updates.</span>
+
+            <span id="email"><input type="email" placeholder="Enter your email" /></span>
+
+            <a href=""><button id="emailBtn"><svg xmlns="http://www.w3.org/2000/svg" width="20.5" height="17.572"
+                        viewBox="0 0 20.5 17.572">
+                        <path id="Icon-send" d="M3.01,22.071,23.5,13.286,3.01,4.5,3,11.333l14.643,1.952L3,15.238Z"
+                            transform="translate(-3 -4.5)" fill="#fff" />
+                        <!--<div id="submittingText" class="submitting-text">Submitting...</div>-->
+                    </svg></button></a>
+
+            <div id="socialsEnd">
+                <a href="https://www.facebook.com/sai4ull"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg></a>
+
+                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                    </svg></a>
+            </div>
+
+        </div>
+
+        <div id="end2">Copyright ©2025 All rights reserved | This template is made with <svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+            </svg> by <a id="Colorlib" href="">Colorlib</a></div>
+    </div>
+
+</body>
+
+</html>
